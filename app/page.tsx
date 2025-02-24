@@ -1,5 +1,6 @@
 import About from '@/components/About';
 import Experience from '@/components/Experience';
+import Tech from '@/components/Tech';
 
 export default function Home() {
   return (
@@ -7,8 +8,8 @@ export default function Home() {
       <div>test</div>
       <About />
       <Experience />
-      {/* <Tech />
-        <Works />
+      <Tech />
+      {/* <Works />
         <Feedbacks />
         <div className='relative z-0'>
           <Contact />
