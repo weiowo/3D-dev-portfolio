@@ -10,9 +10,15 @@
     "format": "prettier --write ."
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "@react-three/drei": "^10.0.1",
+    "@react-three/fiber": "^9.0.4",
+    "framer-motion": "^12.4.7",
+    "maath": "^0.10.8",
     "next": "15.1.7",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-vertical-timeline-component": "^3.5.3"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
