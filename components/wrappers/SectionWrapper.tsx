@@ -1,8 +1,6 @@
 import { motion } from 'framer-motion';
 import { staggerContainer } from '@/utils/motion';
 import { ReactNode } from 'react';
-
-// Define the props to allow children to be passed in
 interface SectionWrapperProps {
   children: ReactNode;
   idName: string;

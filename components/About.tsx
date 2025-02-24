@@ -2,14 +2,14 @@
 import { motion } from 'framer-motion';
 import SectionWrapper from './wrappers/SectionWrapper';
 import { services } from '@/public/constants';
-import Image, { StaticImageData } from 'next/image';
+import Image from 'next/image';
 import Tilt from 'react-parallax-tilt';
 import { fadeIn, textVariant } from '../utils/motion';
 
 interface ServiceCardProps {
   index: number;
   title: string;
-  icon: StaticImageData | string;
+  icon: string;
 }
 
 const ServiceCard: React.FC<ServiceCardProps> = ({ index, title, icon }) => (

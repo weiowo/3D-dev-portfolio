@@ -1,32 +1,3 @@
-import { StaticImageData } from 'next/image';
-
-import {
-  mobile,
-  backend,
-  creator,
-  web,
-  javascript,
-  typescript,
-  html,
-  css,
-  reactjs,
-  redux,
-  tailwind,
-  nodejs,
-  mongodb,
-  git,
-  figma,
-  docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
-  threejs,
-} from '../assets';
-
 interface NavLink {
   id: string;
   title: string;
@@ -34,7 +5,7 @@ interface NavLink {
 
 interface Service {
   title: string;
-  icon: StaticImageData | string;
+  icon: string;
 }
 
 interface Technology {
@@ -45,7 +16,7 @@ interface Technology {
 interface Experience {
   title: string;
   company_name: string;
-  icon: StaticImageData | string;
+  icon: string;
   iconBg: string;
   date: string;
   points: string[];
@@ -56,14 +27,14 @@ interface Testimonial {
   name: string;
   designation: string;
   company: string;
-  image: StaticImageData | string;
+  image: string;
 }
 
 interface Project {
   name: string;
   description: string;
   tags: { name: string; color: string }[];
-  image: StaticImageData | string;
+  image: string;
   source_code_link: string;
 }
 
@@ -85,19 +56,19 @@ export const navLinks: NavLink[] = [
 const services: Service[] = [
   {
     title: 'Web Developer',
-    icon: web,
+    icon: '/assets/web.png',
   },
   {
     title: 'React Native Developer',
-    icon: mobile,
+    icon: '/assets/mobile.png',
   },
   {
     title: 'Backend Developer',
-    icon: backend,
+    icon: '/assets/backend.png',
   },
   {
     title: 'Content Creator',
-    icon: creator,
+    icon: '/assets/creator.png',
   },
 ];
 
@@ -160,7 +131,7 @@ const experiences: Experience[] = [
   {
     title: 'React.js Developer',
     company_name: 'Starbucks',
-    icon: starbucks,
+    icon: '/assets/company/starbucks.png',
     iconBg: '#383E56',
     date: 'March 2020 - April 2021',
     points: [
@@ -173,7 +144,7 @@ const experiences: Experience[] = [
   {
     title: 'React Native Developer',
     company_name: 'Tesla',
-    icon: tesla,
+    icon: '/assets/company/tesla.png',
     iconBg: '#E6DEDD',
     date: 'Jan 2021 - Feb 2022',
     points: [
@@ -186,7 +157,7 @@ const experiences: Experience[] = [
   {
     title: 'Web Developer',
     company_name: 'Shopify',
-    icon: shopify,
+    icon: '/assets/company/shopify.png',
     iconBg: '#383E56',
     date: 'Jan 2022 - Jan 2023',
     points: [
@@ -199,7 +170,7 @@ const experiences: Experience[] = [
   {
     title: 'Full stack Developer',
     company_name: 'Meta',
-    icon: meta,
+    icon: '/assets/company/meta.png',
     iconBg: '#E6DEDD',
     date: 'Jan 2023 - Present',
     points: [
@@ -257,7 +228,7 @@ const projects: Project[] = [
         color: 'pink-text-gradient',
       },
     ],
-    image: carrent,
+    image: '/assets/projects/carrent.png',
     source_code_link: 'https://github.com/',
   },
   {
@@ -278,7 +249,7 @@ const projects: Project[] = [
         color: 'pink-text-gradient',
       },
     ],
-    image: jobit,
+    image: '/assets/projects/jobit.png',
     source_code_link: 'https://github.com/',
   },
   {
@@ -299,7 +270,7 @@ const projects: Project[] = [
         color: 'pink-text-gradient',
       },
     ],
-    image: tripguide,
+    image: '/assets/projects/tripguide.png',
     source_code_link: 'https://github.com/',
   },
 ];
