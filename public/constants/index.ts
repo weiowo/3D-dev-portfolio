@@ -34,18 +34,18 @@ interface NavLink {
 
 interface Service {
   title: string;
-  icon: StaticImageData;
+  icon: StaticImageData | string;
 }
 
 interface Technology {
   name: string;
-  icon: StaticImageData;
+  icon: StaticImageData | string;
 }
 
 interface Experience {
   title: string;
   company_name: string;
-  icon: StaticImageData;
+  icon: StaticImageData | string;
   iconBg: string;
   date: string;
   points: string[];
@@ -56,14 +56,14 @@ interface Testimonial {
   name: string;
   designation: string;
   company: string;
-  image: string;
+  image: StaticImageData | string;
 }
 
 interface Project {
   name: string;
   description: string;
   tags: { name: string; color: string }[];
-  image: StaticImageData;
+  image: StaticImageData | string;
   source_code_link: string;
 }
 
