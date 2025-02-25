@@ -16,7 +16,7 @@ const Hero: React.FC = () => {
 
         <div>
           <h1 className={`hero-head-text text-white`}>
-            Hi, I'm <span className="text-[#915EFF]">Adrian</span>
+            Hi, I'm <span className="text-[#915EFF]">Wei Ting</span>
           </h1>
           <p className={`hero-sub-text mt-2 text-white-100`}>
             I develop 3D visuals, user <br className="sm:block hidden" />
