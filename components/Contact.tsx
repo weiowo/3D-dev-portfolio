@@ -2,7 +2,7 @@
 
 import React, { useRef, useState, ChangeEvent, FormEvent } from 'react';
 import { motion } from 'framer-motion';
-import emailjs from '@emailjs/browser';
+// import emailjs from '@emailjs/browser';
 import EarthCanvas from './canvas/Earth';
 import SectionWrapper from './wrappers/SectionWrapper';
 import { slideIn } from '../utils/motion';
@@ -21,7 +21,7 @@ const Contact: React.FC = () => {
     message: '',
   });
 
-  const [loading, setLoading] = useState<boolean>(false);
+  //   const [loading, setLoading] = useState<boolean>(false);
 
   const handleChange = (
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
@@ -127,7 +127,8 @@ const Contact: React.FC = () => {
               type="submit"
               className="bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary"
             >
-              {loading ? 'Sending...' : 'Send'}
+              Send
+              {/* {loading ? 'Sending...' : 'Send'} */}
             </button>
           </form>
         </motion.div>

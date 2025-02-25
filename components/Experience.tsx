@@ -10,7 +10,6 @@ import 'react-vertical-timeline-component/style.min.css';
 import { experiences } from '@/public/constants';
 import SectionWrapper from './wrappers/SectionWrapper';
 import { textVariant } from '../utils/motion';
-import { StaticImageData } from 'next/image';
 import Image from 'next/image';
 
 interface ExperiencePoint {

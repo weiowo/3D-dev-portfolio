@@ -46,7 +46,6 @@ interface BallCanvasProps {
 }
 
 const BallCanvas: React.FC<BallCanvasProps> = ({ icon }) => {
-  console.log(icon);
   return (
     <Canvas
       frameloop="demand"
