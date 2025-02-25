@@ -44,8 +44,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           <Image
             src={image}
             alt="project_image"
-            width={24}
-            height={24}
+            width={300}
+            height={300}
             className="w-full h-full object-cover rounded-2xl"
           />
 

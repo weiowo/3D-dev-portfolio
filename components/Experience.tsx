@@ -18,7 +18,7 @@ interface ExperiencePoint {
   company_name: string;
   date: string;
   points: string[];
-  icon: string | StaticImageData;
+  icon: string;
   iconBg: string;
 }
 
@@ -41,8 +41,8 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience }) => {
           <Image
             src={experience.icon}
             alt={experience.company_name}
-            width={60}
-            height={60}
+            width={300}
+            height={300}
             className="object-contain"
           />
         </div>
@@ -72,7 +72,6 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience }) => {
   );
 };
 
-// Experience component
 const Experience: React.FC = () => {
   return (
     <SectionWrapper idName="experience">
