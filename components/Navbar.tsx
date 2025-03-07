@@ -43,7 +43,7 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <Logo className="w-9 h-9 object-contain" />
+          {/* <Logo className="w-9 h-9 object-contain" /> */}
         </Link>
 
         <ul className="list-none hidden sm:flex flex-row gap-10">

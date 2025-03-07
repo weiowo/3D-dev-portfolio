@@ -55,11 +55,11 @@ export const navLinks: NavLink[] = [
 
 const services: Service[] = [
   {
-    title: 'Web Developer',
+    title: 'Frontend Developer',
     icon: '/assets/web.png',
   },
   {
-    title: 'React Native Developer',
+    title: 'Next / React Developer',
     icon: '/assets/mobile.png',
   },
   {
@@ -67,7 +67,7 @@ const services: Service[] = [
     icon: '/assets/backend.png',
   },
   {
-    title: 'Content Creator',
+    title: 'Marketing Specialist',
     icon: '/assets/creator.png',
   },
 ];
@@ -110,7 +110,7 @@ const technologies: Technology[] = [
     icon: '/assets/tech/mongodb.png',
   },
   {
-    name: 'Three JS',
+    name: 'Next JS',
     icon: '/assets/tech/threejs.svg',
   },
   {
@@ -129,55 +129,43 @@ const technologies: Technology[] = [
 
 const experiences: Experience[] = [
   {
-    title: 'React.js Developer',
-    company_name: 'Starbucks',
-    icon: '/assets/company/starbucks.png',
-    iconBg: '#383E56',
-    date: 'March 2020 - April 2021',
+    title: 'Frontend Developer',
+    company_name: 'New Digit',
+    icon: '/assets/company/letter-n.png',
+    iconBg: '#DDDDDD',
+    date: 'July 2024 - March 2025',
     points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.',
+      'Completed multiple projects independently and collaborated with FE, BE, and Design teams.',
+      'Built crypto wallet PWA, corporate branding websites, and game websites using Next.js.',
+      'Implemented RWD and visually appealing designs with Tailwind CSS and multi-lingualization with i18n.',
+      'Integrated animation tools such as GSAP, AOS, and CSS animations to deliver dynamic web experiences.',
+      'Contributed to improving website SEO performance through optimization strategies.',
     ],
   },
   {
-    title: 'React Native Developer',
-    company_name: 'Tesla',
-    icon: '/assets/company/tesla.png',
-    iconBg: '#E6DEDD',
-    date: 'Jan 2021 - Feb 2022',
+    title: 'Frontend Developer',
+    company_name: 'Radex Markets',
+    icon: '/assets/company/letter-r.png',
+    iconBg: '#DDDDDD',
+    date: 'October 2022 - May 2024',
     points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.',
+      'Exclusively in charge of FE engineering, collaborated with BE engineers and Art Dept.',
+      "Developed CRM system's entire Frontend part, encompassing Multiple Management pages, Lottery Game for international exhibitions and Mailing System.",
+      "Carried out Official Website's new features for new products and activity launches.",
+      'Enhanced Official Website SEO Performance, elevating Lighthouse score from 70 to 100.',
+      'Developed Backend skills including API creation, server development, and data management from databases.',
     ],
   },
   {
-    title: 'Web Developer',
-    company_name: 'Shopify',
-    icon: '/assets/company/shopify.png',
-    iconBg: '#383E56',
-    date: 'Jan 2022 - Jan 2023',
+    title: 'Marketing Specialist',
+    company_name: 'TEAMA Technology',
+    icon: '/assets/company/letter-t.png',
+    iconBg: '#DDDDDD',
+    date: 'July 2019 - September 2021',
     points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.',
-    ],
-  },
-  {
-    title: 'Full stack Developer',
-    company_name: 'Meta',
-    icon: '/assets/company/meta.png',
-    iconBg: '#E6DEDD',
-    date: 'Jan 2023 - Present',
-    points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.',
+      'Website Management, Social Media Operation, EDM Design, Video Editing, Activity Planning, Translation, Content Creating, etc.',
+      'Communicated with Engineers, PMs and colleagues from headquarter in USA to analyze and discuss the optimization method of SEO, Keyword Ads and GDN Ads performance.',
+      'Held activities with more than one hundred participants, got over 200% leads compared to the previous year.',
     ],
   },
 ];
@@ -211,7 +199,7 @@ const testimonials: Testimonial[] = [
 
 const projects: Project[] = [
   {
-    name: 'Car Rent',
+    name: 'Bon Voyage',
     description:
       'Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.',
     tags: [

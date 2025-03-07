@@ -46,12 +46,13 @@ const About: React.FC = () => {
         variants={fadeIn('', '', 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        I&apos;m a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and
-        Three.js. I&apos;m a quick learner and collaborate closely with clients
-        to create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let&apos;s work together to bring your ideas to
-        life!
+        I'm a skilled software developer with experience in{' '}
+        <strong>TypeScript</strong> and <strong>Javascript</strong>, expertising
+        in frameworks like <strong>Next.js, React and Node.js</strong>. I'm a
+        dedicated, proactive, and detail-oriented software engineer with
+        cross-field experiences in digital marketing, an open-minded
+        self-learner who embraces challenges and enjoys problem-solving, a team
+        player who's also good at independent work.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">

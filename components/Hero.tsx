@@ -15,12 +15,14 @@ const Hero: React.FC = () => {
         </div>
 
         <div>
-          <h1 className={`hero-head-text text-white`}>
+          <div className={`hero-head-text text-white`}>
             Hi, I&apos;m <span className="text-[#915EFF]">Wei Ting</span>
-          </h1>
+          </div>
           <p className={`hero-sub-text mt-2 text-white-100`}>
-            I develop 3D visuals, user <br className="sm:block hidden" />
-            interfaces and web applications
+            I develop web applications, user interfaces, and innovative
+            projects,
+            <br className="sm:block hidden" /> delivering efficient,
+            user-friendly, and high-performance solutions.
           </p>
         </div>
       </div>
