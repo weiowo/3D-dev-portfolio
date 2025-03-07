@@ -29,10 +29,17 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience }) => {
   return (
     <VerticalTimelineElement
       contentStyle={{
-        background: '#1d1836',
+        background: '#181818',
         color: '#fff',
+        border: '1px solid',
+        borderColor: ' #454545',
+        borderRadius: '20px',
+        boxShadow:
+          '0 4px 6px -1px rgba(134, 134, 134, 0.25), 0 2px 4px -2px rgba(134, 134, 134, 0.25)',
       }}
-      contentArrowStyle={{ borderRight: '7px solid  #232631' }}
+      contentArrowStyle={{
+        borderRight: '10px solid  #b6b6b6',
+      }}
       date={experience.date}
       iconStyle={{ background: experience.iconBg }}
       icon={
@@ -48,9 +55,11 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience }) => {
       }
     >
       <div>
-        <h3 className="text-white text-[24px] font-bold">{experience.title}</h3>
+        <h3 className="text-white text-[24px] tracking-[0.05em] font-bold">
+          {experience.title}
+        </h3>
         <p
-          className="text-secondary text-[16px] font-semibold"
+          className="text-secondary text-[20px] tracking-[0.05em] font-semibold"
           style={{ margin: 0 }}
         >
           {experience.company_name}
@@ -61,7 +70,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience }) => {
         {experience.points.map((point, index) => (
           <li
             key={`experience-point-${index}`}
-            className="text-white-100 text-[14px] pl-1 tracking-wider"
+            className="text-white-100 text-[16px] pl-1 tracking-wider"
           >
             {point}
           </li>
