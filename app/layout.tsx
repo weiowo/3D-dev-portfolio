@@ -1,17 +1,14 @@
 import type { Metadata } from 'next';
-import { Geist, Geist_Mono } from 'next/font/google';
+import { Afacad } from 'next/font/google';
 import Navbar from '@/components/Navbar';
 import './globals.css';
 import Hero from '@/components/Hero';
+import StarsCanvas from '@/components/canvas/Stars';
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
+const afacad = Afacad({
+  variable: '--font-afacad',
   subsets: ['latin'],
-});
-
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
-  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'], // Adjust based on your needs
 });
 
 export const metadata: Metadata = {
@@ -26,13 +23,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} bg-primary santialiased`}
-      >
-        <div className="relative z-0 bg-primary">
-          <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
+      <body className={`${afacad.variable} bg-black santialiased`}>
+        <div className="relative z-0 bg-black">
+          <div className="bg-cover bg-no-repeat bg-center">
             <Navbar />
-            <Hero />
+            <div className="relative z-0">
+              <Hero />
+              {/* <StarsCanvas /> */}
+            </div>
           </div>
           {children}
         </div>
