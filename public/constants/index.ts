@@ -205,61 +205,128 @@ const projects: Project[] = [
     tags: [
       {
         name: 'react',
-        color: 'blue-text-gradient',
+        color: 'blue-gradient',
       },
       {
-        name: 'mongodb',
-        color: 'green-text-gradient',
+        name: 'styled-component',
+        color: 'green-gradient',
       },
       {
-        name: 'tailwind',
-        color: 'pink-text-gradient',
+        name: 'firebase',
+        color: 'pink-gradient',
+      },
+      {
+        name: 'google-map-api',
+        color: 'green-pink-gradient',
       },
     ],
-    image: '/assets/projects/carrent.png',
-    source_code_link: 'https://github.com/',
+    image: '/assets/projects/bon-voyage.png',
+    source_code_link: 'https://bonvoyage-f5e7d.web.app/',
   },
   {
-    name: 'Job IT',
+    name: 'Radex Markets Website',
+    description:
+      'A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.',
+    tags: [
+      {
+        name: 'react',
+        color: 'blue-gradient',
+      },
+      {
+        name: 'javascript',
+        color: 'green-gradient',
+      },
+      {
+        name: 'css',
+        color: 'pink-gradient',
+      },
+      {
+        name: 'aos',
+        color: 'pink-gradient',
+      },
+    ],
+    image: '/assets/projects/radex-markets.png',
+    source_code_link: 'https://www.radexmarkets.com/',
+  },
+  {
+    name: 'ChainStar',
     description:
       'Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.',
     tags: [
       {
-        name: 'react',
-        color: 'blue-text-gradient',
+        name: 'next.js',
+        color: 'blue-gradient',
       },
       {
-        name: 'restapi',
-        color: 'green-text-gradient',
+        name: 'tailwind',
+        color: 'green-gradient',
       },
       {
-        name: 'scss',
-        color: 'pink-text-gradient',
+        name: 'emailjs',
+        color: 'pink-gradient',
+      },
+      {
+        name: 'i18n',
+        color: 'pink-gradient',
+      },
+      {
+        name: 'swiper',
+        color: 'pink-gradient',
       },
     ],
-    image: '/assets/projects/jobit.png',
-    source_code_link: 'https://github.com/',
+    image: '/assets/projects/chain-star.png',
+    source_code_link: 'https://chainstar.cloud/en-US',
   },
   {
-    name: 'Trip Guide',
+    name: 'Kingcard - Wallet PWA',
     description:
       'A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.',
     tags: [
       {
         name: 'nextjs',
-        color: 'blue-text-gradient',
+        color: 'blue-gradient',
       },
       {
-        name: 'supabase',
-        color: 'green-text-gradient',
+        name: 'zustand',
+        color: 'green-gradient',
+      },
+      {
+        name: 'typescript',
+        color: 'pink-gradient',
+      },
+      {
+        name: 'i18n',
+        color: 'green-pink-gradient',
+      },
+      {
+        name: 'react-hook-form',
+        color: 'green-pink-gradient',
+      },
+    ],
+    image: '/assets/projects/kingcard.png',
+    source_code_link: 'https://kingcard.vip/en-US/download',
+  },
+  {
+    name: 'Stylish',
+    description:
+      'A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.',
+    tags: [
+      {
+        name: 'react',
+        color: 'blue-gradient',
+      },
+      {
+        name: 'seo',
+        color: 'green-gradient',
       },
       {
         name: 'css',
-        color: 'pink-text-gradient',
+        color: 'pink-gradient',
       },
     ],
-    image: '/assets/projects/tripguide.png',
-    source_code_link: 'https://github.com/',
+    image: '/assets/projects/stylish.png',
+    source_code_link:
+      'https://drive.google.com/drive/folders/1i9Jn7iwutKez-RoHCD33uOdl84PPPMsg?usp=drive_link',
   },
 ];
 
