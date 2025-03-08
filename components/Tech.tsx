@@ -2,7 +2,7 @@
 
 import BallCanvas from './canvas/Ball';
 import SectionWrapper from './wrappers/SectionWrapper';
-import { technologies } from '@/public/constants';
+import { technologies } from '@/public/lib/constants';
 
 interface Technology {
   name: string;

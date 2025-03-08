@@ -38,15 +38,15 @@ body {
 }
 
 .green-gradient {
-  background: linear-gradient(to top, #11998e, #38ef7d);
+  background: linear-gradient(45deg, #90e098 0%, #afffb7 100%);
 }
 
 .blue-gradient {
-  background: linear-gradient(to top, #2f80ed, #56ccf2);
+  background: linear-gradient(90deg, #74ebd5 0%, #9face6 100%);
 }
 
 .pink-gradient {
-  background: linear-gradient(to top, #ec008c, #fc6767);
+  background: linear-gradient(45deg, #feb0b0 0%, #ff5acd 100%);
 }
 
 /* Padding */

@@ -201,7 +201,7 @@ const projects: Project[] = [
   {
     name: 'Bon Voyage',
     description:
-      'Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.',
+      'A comprehensive platform designed for travelers to discoverew destinations, plan itineraries,write articles, ensuring a seamless and enriched exploration experience.',
     tags: [
       {
         name: 'react',
@@ -209,24 +209,24 @@ const projects: Project[] = [
       },
       {
         name: 'styled-component',
-        color: 'green-gradient',
+        color: 'green-pink-gradient',
       },
       {
         name: 'firebase',
-        color: 'pink-gradient',
+        color: 'blue-gradient',
       },
       {
         name: 'google-map-api',
         color: 'green-pink-gradient',
       },
     ],
-    image: '/assets/projects/bon-voyage.png',
+    image: '/assets/projects/bon-voyage.webp',
     source_code_link: 'https://bonvoyage-f5e7d.web.app/',
   },
   {
     name: 'Radex Markets Website',
     description:
-      'A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.',
+      'A comprehensive Forex website that offers trending news, detailed product intros, educational resources, and exciting bonus activities to enhance the trading experience.',
     tags: [
       {
         name: 'react',
@@ -234,15 +234,15 @@ const projects: Project[] = [
       },
       {
         name: 'javascript',
-        color: 'green-gradient',
+        color: 'green-pink-gradient',
       },
       {
         name: 'css',
-        color: 'pink-gradient',
+        color: 'blue-gradient',
       },
       {
         name: 'aos',
-        color: 'pink-gradient',
+        color: 'green-pink-gradient',
       },
     ],
     image: '/assets/projects/radex-markets.png',
@@ -251,7 +251,7 @@ const projects: Project[] = [
   {
     name: 'ChainStar',
     description:
-      'Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.',
+      'A dynamic website showcasing innovative Web3 solutions, featuring company and product overviews while providing insights for investors, and tech enthusiasts.',
     tags: [
       {
         name: 'next.js',
@@ -259,19 +259,19 @@ const projects: Project[] = [
       },
       {
         name: 'tailwind',
-        color: 'green-gradient',
+        color: 'green-pink-gradient',
       },
       {
         name: 'emailjs',
-        color: 'pink-gradient',
+        color: 'blue-gradient',
       },
       {
         name: 'i18n',
-        color: 'pink-gradient',
+        color: 'green-pink-gradient',
       },
       {
         name: 'swiper',
-        color: 'pink-gradient',
+        color: 'blue-gradient',
       },
     ],
     image: '/assets/projects/chain-star.png',
@@ -280,7 +280,7 @@ const projects: Project[] = [
   {
     name: 'Kingcard - Wallet PWA',
     description:
-      'A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.',
+      ' A PWA for managing crypto assets, enabling users to securely store, send, and receive digital currencies, and access their wallets with an intuitive and user-friendly interface.',
     tags: [
       {
         name: 'nextjs',
@@ -288,11 +288,11 @@ const projects: Project[] = [
       },
       {
         name: 'zustand',
-        color: 'green-gradient',
+        color: 'green-pink-gradient',
       },
       {
         name: 'typescript',
-        color: 'pink-gradient',
+        color: 'blue-gradient',
       },
       {
         name: 'i18n',
@@ -300,7 +300,7 @@ const projects: Project[] = [
       },
       {
         name: 'react-hook-form',
-        color: 'green-pink-gradient',
+        color: 'blue-gradient',
       },
     ],
     image: '/assets/projects/kingcard.png',
@@ -309,7 +309,7 @@ const projects: Project[] = [
   {
     name: 'Stylish',
     description:
-      'A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.',
+      'An advanced e-commerce website for fashionable outfits, offering a seamless shopping experience with a personalized recommendations and payment options.',
     tags: [
       {
         name: 'react',
@@ -317,11 +317,11 @@ const projects: Project[] = [
       },
       {
         name: 'seo',
-        color: 'green-gradient',
+        color: 'green-pink-gradient',
       },
       {
         name: 'css',
-        color: 'pink-gradient',
+        color: 'blue-gradient',
       },
     ],
     image: '/assets/projects/stylish.png',

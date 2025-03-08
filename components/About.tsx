@@ -1,7 +1,7 @@
 'use client';
 import { motion } from 'framer-motion';
 import SectionWrapper from './wrappers/SectionWrapper';
-import { services } from '@/public/constants';
+import { services } from '@/public/lib/constants';
 import Image from 'next/image';
 import Tilt from 'react-parallax-tilt';
 import { fadeIn, textVariant } from '../utils/motion';
@@ -46,13 +46,13 @@ const About: React.FC = () => {
         variants={fadeIn('', '', 0.1, 1)}
         className="mt-4 text-secondary text-[20px] max-w-3xl leading-[30px]"
       >
-        I'm a skilled software developer with experience in{' '}
+        I&apos;m a skilled software developer with experience in{' '}
         <strong>TypeScript</strong> and <strong>Javascript</strong>, expertising
-        in frameworks like <strong>Next.js, React and Node.js</strong>. I'm a
-        proactive, and detail-oriented software engineer with cross-field
+        in frameworks like <strong>Next.js, React and Node.js</strong>. I&apos;m
+        a proactive, and detail-oriented software engineer with cross-field
         experiences in digital marketing, an open-minded self-learner who
-        embraces challenges and enjoys problem-solving, a team player who's also
-        good at independent work.
+        embraces challenges and enjoys problem-solving, a team player who&apos;s
+        also good at independent work.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">

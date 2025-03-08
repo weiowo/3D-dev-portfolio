@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
-import { navLinks } from '@/public/constants';
+import { navLinks } from '@/public/lib/constants';
 import Link from 'next/link';
 // import Logo from '@/public/assets/logo.svg';
 import Menu from '@/public/assets/menu.svg';

@@ -42,12 +42,11 @@ const Stars: React.FC = (props) => {
 
 const StarsCanvas: React.FC = () => {
   return (
-    <div className="w-full h-full absolute inset-0 z-[-1]">
+    <div className="fixed top-0 left-0 w-screen h-screen z-[-1]">
       <Canvas camera={{ position: [0, 0, 1] }}>
         <Suspense fallback={null}>
           <Stars />
         </Suspense>
-
         <Preload all />
       </Canvas>
     </div>

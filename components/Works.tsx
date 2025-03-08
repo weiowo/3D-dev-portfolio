@@ -2,7 +2,7 @@
 import React from 'react';
 import Tilt from 'react-parallax-tilt';
 import { motion } from 'framer-motion';
-import { projects } from '@/public/constants';
+import { projects } from '@/public/lib/constants';
 import SectionWrapper from './wrappers/SectionWrapper';
 import Image from 'next/image';
 import { fadeIn, textVariant } from '../utils/motion';
@@ -33,16 +33,15 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   image,
   source_code_link,
 }) => {
-  console.log('tags', tags);
   return (
     <motion.div variants={fadeIn('up', 'spring', index * 0.5, 0.75)}>
       <Tilt
         scale={1}
         transitionSpeed={450}
         tiltMaxAngleX={20}
-        className="shadow-md shadow-[#86868640] border-[2px] border-[#202020] p-5 rounded-2xl sm:w-[360px] w-full"
+        className="shadow-md shadow-[#86868640] border-[2px] border-[#202020] p-5 h-[490px] rounded-2xl sm:w-[360px] w-full"
       >
-        <Link href={source_code_link}>
+        <Link href={source_code_link} className="">
           <div className="relative w-full h-[200px]">
             <Image
               src={image}
@@ -60,12 +59,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
           <div className="mt-4 flex flex-wrap gap-2">
             {tags.map((tag) => (
-              <span
+              <div
                 key={`${name}-${tag.name}`}
                 className={`px-3 py-[2px] rounded text-black text-[15px] ${tag.color}`}
               >
                 #{tag.name}
-              </span>
+              </div>
             ))}
           </div>
         </Link>

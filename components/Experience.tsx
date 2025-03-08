@@ -7,7 +7,7 @@ import {
 } from 'react-vertical-timeline-component';
 import { motion } from 'framer-motion';
 import 'react-vertical-timeline-component/style.min.css';
-import { experiences } from '@/public/constants';
+import { experiences } from '@/public/lib/constants';
 import SectionWrapper from './wrappers/SectionWrapper';
 import { textVariant } from '../utils/motion';
 import Image from 'next/image';

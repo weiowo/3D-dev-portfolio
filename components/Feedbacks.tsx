@@ -2,7 +2,7 @@
 import { motion } from 'framer-motion';
 import { fadeIn, textVariant } from '../utils/motion';
 import SectionWrapper from './wrappers/SectionWrapper';
-import { testimonials } from '@/public/constants';
+import { testimonials } from '@/public/lib/constants';
 import Image from 'next/image';
 
 interface FeedbackCardProps {

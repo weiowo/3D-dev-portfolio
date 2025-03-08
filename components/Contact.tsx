@@ -1,75 +1,97 @@
 'use client';
 
-import React, { useRef, useState, ChangeEvent, FormEvent } from 'react';
+import React, { useRef, useState } from 'react';
 import { motion } from 'framer-motion';
-// import emailjs from '@emailjs/browser';
+import { useForm } from 'react-hook-form';
 import EarthCanvas from './canvas/Earth';
 import SectionWrapper from './wrappers/SectionWrapper';
 import { slideIn } from '../utils/motion';
+import Button from './button';
+import emailjs from '@emailjs/browser';
+import ReCAPTCHA from 'react-google-recaptcha';
 
-interface FormState {
+type FormData = {
   name: string;
   email: string;
   message: string;
-}
+};
 
 const Contact: React.FC = () => {
   const formRef = useRef<HTMLFormElement>(null);
-  const [form, setForm] = useState<FormState>({
-    name: '',
-    email: '',
-    message: '',
-  });
+  // const [form, setForm] = useState<FormState>({
+  //   name: '',
+  //   email: '',
+  //   message: '',
+  // });
 
-  //   const [loading, setLoading] = useState<boolean>(false);
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    reset,
+  } = useForm<FormData>();
 
-  const handleChange = (
-    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
-  ) => {
-    const { name, value } = e.target;
-
-    setForm({
-      ...form,
-      [name]: value,
-    });
+  const [recaptchaToken, setRecaptchaToken] = useState<string | null>(null);
+  const onRecaptchaChange = (token: string | null) => {
+    setRecaptchaToken(token);
   };
 
-  // Handle form submission
-  const handleSubmit = (e: FormEvent) => {
-    e.preventDefault();
-    console.log('data', e);
+  const onSubmit = async (data: FormData) => {
+    if (!recaptchaToken) {
+      alert('Please complete the reCAPTCHA.');
+      return;
+    }
 
-    // emailjs
-    //   .send(
-    //     import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-    //     import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
-    //     {
-    //       from_name: form.name,
-    //       to_name: "JavaScript Mastery",
-    //       from_email: form.email,
-    //       to_email: "sujata@jsmastery.pro",
-    //       message: form.message,
-    //     },
-    //     import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
-    //   )
-    //   .then(
-    //     () => {
-    //       setLoading(false);
-    //       alert("Thank you. I will get back to you as soon as possible.");
+    const verificationResponse = await fetch('/api/verify-recaptcha', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ recaptchaToken }),
+    });
+    const verificationResult = await verificationResponse.json();
+    if (!verificationResult.success) {
+      alert('reCAPTCHA verification failed. Please try again.');
+      return;
+    }
 
-    //       setForm({
-    //         name: "",
-    //         email: "",
-    //         message: "",
-    //       });
-    //     },
-    //     (error) => {
-    //       setLoading(false);
-    //       console.error(error);
+    if (
+      !process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID ||
+      !process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID ||
+      !process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+    ) {
+      console.error('EmailJS environment variables are not set');
+      alert('Email service is not supported');
+      return;
+    }
 
-    //       alert("Ahh, something went wrong. Please try again.");
-    //     }
-    //   );
+    const emailParams = {
+      name: data.name,
+      email: data.email,
+      message: data.message,
+    };
+
+    emailjs
+      .send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+        emailParams,
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY,
+      )
+      .then(
+        () => {
+          alert('Email sent successfully!');
+          reset();
+        },
+        (error) => {
+          console.error('Failed to send email:', error);
+          alert('Failed to send email. Please try again later.');
+        },
+      );
+  };
+
+  const asyncScriptOnLoad = () => {
+    console.log('Google recaptcha loaded just fine');
   };
 
   return (
@@ -86,50 +108,65 @@ const Contact: React.FC = () => {
 
           <form
             ref={formRef}
-            onSubmit={handleSubmit}
+            onSubmit={handleSubmit(onSubmit)}
             className="mt-5 flex flex-col gap-4"
           >
             <label className="flex flex-col">
               <span className="text-white font-medium mb-3">Your Name</span>
               <input
                 type="text"
-                name="name"
-                value={form.name}
-                onChange={handleChange}
-                placeholder="What's your good name?"
+                {...register('name', { required: 'Name is required' })}
+                placeholder="What's your name?"
                 className="bg-[#cdcdcd] py-2 px-4 placeholder:text-[#838383] text-black rounded-lg outline-none border-none font-medium"
               />
+              {errors.name && (
+                <span className="mt-1 text-sm text-red-500">
+                  {errors.name.message}
+                </span>
+              )}
             </label>
+
             <label className="flex flex-col">
               <span className="text-white font-medium mb-3">Your email</span>
               <input
                 type="email"
-                name="email"
-                value={form.email}
-                onChange={handleChange}
+                {...register('email', { required: 'email is required' })}
                 placeholder="What's your web address?"
                 className="bg-[#cdcdcd] py-2 px-4 placeholder:text-[#838383] text-black rounded-lg outline-none border-none font-medium"
               />
+              {errors.email && (
+                <span className="mt-1 text-sm text-red-500">
+                  {errors.email?.message}
+                </span>
+              )}
             </label>
+
             <label className="flex flex-col">
               <span className="text-white font-medium mb-3">Your Message</span>
               <textarea
                 rows={7}
-                name="message"
-                value={form.message}
-                onChange={handleChange}
+                {...register('message', { required: 'Message is required' })}
                 placeholder="What you want to say?"
                 className="bg-[#cdcdcd] py-2 px-4 placeholder:text-[#838383] text-black rounded-lg outline-none border-none font-medium"
               />
+              {errors.message && (
+                <span className="mt-1 text-sm text-red-500">
+                  {errors.message?.message}
+                </span>
+              )}
             </label>
 
-            <button
-              type="submit"
-              className="bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary"
-            >
+            <ReCAPTCHA
+              sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY!}
+              onChange={onRecaptchaChange}
+              asyncScriptOnLoad={asyncScriptOnLoad}
+              theme="dark"
+            />
+
+            <Button type="submit" className="mt-3">
               Send
               {/* {loading ? 'Sending...' : 'Send'} */}
-            </button>
+            </Button>
           </form>
         </motion.div>
 
