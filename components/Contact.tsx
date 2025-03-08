@@ -18,11 +18,6 @@ type FormData = {
 
 const Contact: React.FC = () => {
   const formRef = useRef<HTMLFormElement>(null);
-  // const [form, setForm] = useState<FormState>({
-  //   name: '',
-  //   email: '',
-  //   message: '',
-  // });
 
   const {
     register,
