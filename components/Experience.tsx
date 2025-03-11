@@ -34,6 +34,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience }) => {
         border: '1px solid',
         borderColor: ' #454545',
         borderRadius: '20px',
+        marginRight:0,
         boxShadow:
           '0 4px 6px -1px rgba(134, 134, 134, 0.25), 0 2px 4px -2px rgba(134, 134, 134, 0.25)',
       }}
@@ -82,7 +83,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience }) => {
 
 const Experience: React.FC = () => {
   return (
-    <SectionWrapper idName="experience">
+    <SectionWrapper idName="experience" className="px-3">
       <motion.div variants={textVariant()}>
         <p className={`section-sub-text text-center`}>
           What I have done so far

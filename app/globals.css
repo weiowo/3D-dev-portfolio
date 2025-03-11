@@ -51,13 +51,10 @@ body {
 
 /* Padding */
 .padding-x {
-  @apply sm:px-16 px-6;
+  @apply sm:px-16 px-5;
 }
 .padding-y {
   @apply sm:py-16 py-6;
-}
-.padding-all {
-  @apply sm:px-16 px-6 sm:py-16 py-10;
 }
 
 /* Hero Text */

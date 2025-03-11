@@ -96,7 +96,7 @@ const Contact: React.FC = () => {
       >
         <motion.div
           variants={slideIn('left', 'tween', 0.2, 1)}
-          className="flex-[0.75] shadow-md shadow-[#86868640] border-[2px] border-[#202020] p-8 rounded-2xl"
+          className="flex-[0.75] shadow-md shadow-[#86868640] border-[2px] border-[#202020] p-4 sm:p-8 rounded-2xl"
         >
           <p className="section-sub-text">Get in touch</p>
           <h3 className="section-head-text">Contact.</h3>
