@@ -307,6 +307,35 @@ const projects: Project[] = [
     source_code_link: 'https://kingcard.vip/en-US/download',
   },
   {
+    name: 'Xglobal',
+    description:
+      'A modern website showcasing innovative iGaming solutions, featuring product overviews, gaming demos and resource downloads.',
+    tags: [
+      {
+        name: 'nextjs',
+        color: 'blue-gradient',
+      },
+      {
+        name: 'GSAP',
+        color: 'green-pink-gradient',
+      },
+      {
+        name: 'typescript',
+        color: 'blue-gradient',
+      },
+      {
+        name: 'i18n',
+        color: 'green-pink-gradient',
+      },
+      {
+        name: 'react-hook-form',
+        color: 'blue-gradient',
+      },
+    ],
+    image: '/assets/projects/xglobal.png',
+    source_code_link: 'https://xg.io/en-US',
+  },
+  {
     name: 'Stylish',
     description:
       'An advanced e-commerce website for fashionable outfits, offering a seamless shopping experience with a personalized recommendations and payment options.',
@@ -316,11 +345,19 @@ const projects: Project[] = [
         color: 'blue-gradient',
       },
       {
-        name: 'seo',
+        name: 'css',
         color: 'green-pink-gradient',
       },
       {
-        name: 'css',
+        name: 'tap-pay',
+        color: 'blue-gradient',
+      },
+      {
+        name: 'socket.io',
+        color: 'green-pink-gradient',
+      },
+      {
+        name: 'seo',
         color: 'blue-gradient',
       },
     ],

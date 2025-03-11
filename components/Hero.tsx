@@ -2,30 +2,51 @@
 
 import { motion } from 'framer-motion';
 import ComputersCanvas from './canvas/Computers';
+import Image from 'next/image';
+import Link from 'next/link';
 
 const Hero: React.FC = () => {
   return (
     <section className="relative w-full h-screen mx-auto">
       <div
-        className={`absolute inset-0 top-[120px] max-w-7xl mx-auto pading-x flex flex-row justify-center items-start gap-5`}
+        className={`absolute inset-0 top-[100px] max-w-7xl mx-auto pading-x flex flex-row justify-center items-start gap-5`}
       >
-        {/* <div className="flex flex-col justify-center items-center mt-5">
-          <div className="w-5 h-5 rounded-full bg-[#915EFF]" />
-          <div className="w-1 sm:h-80 h-40 violet-gradient" />
-        </div> */}
-
         <div>
           <div className={`hero-head-text text-white text-center`}>
             Hi, I&apos;m <span className="text-[#915EFF]">Wei Ting</span>
           </div>
           <p
-            className={`hero-sub-text mt-2 text-white text-center tracking-[0.05em]`}
+            className={`hero-sub-text text-white text-center tracking-[0.05em]`}
           >
             I develop web applications, user interfaces, and innovative
             projects,
             <br className="sm:block hidden" /> delivering efficient,
             user-friendly, and high-performance solutions.
           </p>
+          <div className="flex items-center justify-center gap-3 mt-3">
+            <Link
+              className="z-10"
+              href="https://github.com/weiowo?tab=repositories"
+            >
+              <Image
+                src="/assets/github.png"
+                alt="github-icon"
+                width={30}
+                height={30}
+              />
+            </Link>
+            <Link
+              className="z-10"
+              href="https://www.linkedin.com/in/wei-ting-wang-a7543a170/"
+            >
+              <Image
+                src="/assets/linkedin.png"
+                alt="linkedin-icon"
+                width={25}
+                height={25}
+              />
+            </Link>
+          </div>
         </div>
       </div>
 

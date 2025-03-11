@@ -6,12 +6,13 @@ import './globals.css';
 const afacad = Afacad({
   variable: '--font-afacad',
   subsets: ['latin'],
-  weight: ['400', '500', '600', '700'], // Adjust based on your needs
+  weight: ['400', '500', '600', '700'],
 });
 
 export const metadata: Metadata = {
-  title: 'Developer Portfolio',
-  description: '3D Developer Portfolio',
+  title: 'Wei Ting | Software Engineer Portfolio',
+  description:
+    'Expertise, projects, and experience in web development. Explore my work and get in touch.',
 };
 
 export default function RootLayout({
