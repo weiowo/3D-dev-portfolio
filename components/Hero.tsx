@@ -11,7 +11,7 @@ const Hero: React.FC = () => {
       <div
         className={`absolute inset-0 top-[100px] max-w-7xl mx-auto pading-x flex flex-row justify-center items-start gap-5`}
       >
-        <div className='px-4'>
+        <div className="px-4">
           <div className={`hero-head-text text-white text-center`}>
             Hi, I&apos;m <span className="text-[#915EFF]">Wei Ting</span>
           </div>

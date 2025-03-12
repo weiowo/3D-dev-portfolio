@@ -36,7 +36,7 @@ import SectionWrapper from './wrappers/SectionWrapper';
 //   >
 //     <p
 //       className="
-//     text-white 
+//     text-white
 //     font-black text-[48px]"
 //     >
 //       &quot;

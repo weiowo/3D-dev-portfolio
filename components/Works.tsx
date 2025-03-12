@@ -1,11 +1,9 @@
 'use client';
 import React from 'react';
 import Tilt from 'react-parallax-tilt';
-import { motion } from 'framer-motion';
 import { projects } from '@/public/lib/constants';
 import SectionWrapper from './wrappers/SectionWrapper';
 import Image from 'next/image';
-import { fadeIn, textVariant } from '../utils/motion';
 import Link from 'next/link';
 
 interface Tag {
@@ -26,7 +24,6 @@ interface ProjectCardProps extends Project {
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
-  index,
   name,
   description,
   tags,
@@ -34,13 +31,13 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   source_code_link,
 }) => {
   return (
-    <motion.div variants={fadeIn('up', 'spring', index * 0.5, 0.75)}>
-      <Tilt
-        scale={1}
-        transitionSpeed={450}
-        tiltMaxAngleX={20}
-        className="shadow-md shadow-[#86868640] border-[2px] border-[#202020] p-5 h-[490px] rounded-2xl sm:w-[360px] w-full"
-      >
+    <Tilt
+      scale={1}
+      transitionSpeed={450}
+      tiltMaxAngleX={20}
+      className="shadow-md shadow-[#86868640] border-[2px] border-[#202020] p-5 h-[490px] rounded-2xl sm:w-[360px] w-full"
+    >
+      <div>
         <Link href={source_code_link} className="">
           <div className="relative w-full h-[200px]">
             <Image
@@ -68,22 +65,22 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             ))}
           </div>
         </Link>
-      </Tilt>
-    </motion.div>
+      </div>
+    </Tilt>
   );
 };
 
 const Works: React.FC = () => {
   return (
     <SectionWrapper idName="work">
-      <motion.div variants={textVariant()}>
+      <div>
         <p className="section-sub-text">My work</p>
         <h2 className="section-head-text">Projects.</h2>
-      </motion.div>
+      </div>
 
       <div className="w-full flex">
-        <motion.p
-          variants={fadeIn('', '', 0.1, 1)}
+        <p
+          // variants={fadeIn('', '', 0.1, 1)}
           className="mt-3 text-secondary text-[20px] max-w-3xl leading-[30px] "
         >
           Following projects showcase my skills and experience through examples
@@ -91,7 +88,7 @@ const Works: React.FC = () => {
           repositories and live demos in it. It reflects my ability to solve
           complex problems, work with different technologies, and manage
           projects effectively.
-        </motion.p>
+        </p>
       </div>
 
       <div className="mt-20 flex flex-wrap gap-7">
