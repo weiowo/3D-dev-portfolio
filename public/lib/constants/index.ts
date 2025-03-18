@@ -253,7 +253,7 @@ const projects: Project[] = [
         color: 'green-pink-gradient',
       },
     ],
-    image: '/assets/projects/wanderwords.png',
+    image: '/assets/projects/wanderwords.webp',
     source_code_link: 'https://github.com/weiowo/WanderWords',
   },
   {
