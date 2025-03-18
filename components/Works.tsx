@@ -35,17 +35,17 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       scale={1}
       transitionSpeed={450}
       tiltMaxAngleX={20}
-      className="shadow-md shadow-[#86868640] border-[2px] border-[#202020] p-5 h-[490px] rounded-2xl sm:w-[360px] w-full"
+      className="shadow-md shadow-[#86868640] border-[2px] border-[#202020] p-5 h-[470px] rounded-2xl sm:w-[360px] w-full"
     >
       <div>
         <Link href={source_code_link} className="">
-          <div className="relative w-full h-[200px]">
+          <div className="relative w-full h-[175px]">
             <Image
               src={image}
               alt="project_image"
               width={300}
               height={200}
-              className="w-full h-full object-cover rounded-2xl"
+              className="w-full h-full object-cover rounded-lg"
             />
           </div>
 

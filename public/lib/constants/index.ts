@@ -224,6 +224,68 @@ const projects: Project[] = [
     source_code_link: 'https://bonvoyage-f5e7d.web.app/',
   },
   {
+    name: 'WanderWords',
+    description:
+      'A dynamic blog platform where creators can share their unique ideas, experiences. Whether it’s personal reflections or technical discussions, this space empowers you to inspire.',
+    tags: [
+      {
+        name: 'next',
+        color: 'blue-gradient',
+      },
+      {
+        name: 'typescript',
+        color: 'green-pink-gradient',
+      },
+      {
+        name: 'tailwind',
+        color: 'blue-gradient',
+      },
+      {
+        name: 'node.js',
+        color: 'green-pink-gradient',
+      },
+      {
+        name: 'express',
+        color: 'blue-gradient',
+      },
+      {
+        name: 'mongoDB',
+        color: 'green-pink-gradient',
+      },
+    ],
+    image: '/assets/projects/wanderwords.png',
+    source_code_link: 'https://github.com/weiowo/WanderWords',
+  },
+  {
+    name: 'Kingcard - Crypto Wallet',
+    description:
+      ' A PWA for managing crypto assets, enabling users to securely store, send, and receive digital currencies, and access their wallets with an intuitive and user-friendly interface.',
+    tags: [
+      {
+        name: 'nextjs',
+        color: 'blue-gradient',
+      },
+      {
+        name: 'zustand',
+        color: 'green-pink-gradient',
+      },
+      {
+        name: 'typescript',
+        color: 'blue-gradient',
+      },
+      {
+        name: 'i18n',
+        color: 'green-pink-gradient',
+      },
+      {
+        name: 'react-hook-form',
+        color: 'blue-gradient',
+      },
+    ],
+    image: '/assets/projects/kingcard.png',
+    source_code_link: 'https://kingcard.vip/en-US/download',
+  },
+  {
     name: 'Radex Markets Website',
     description:
       'A comprehensive Forex website that offers trending news, detailed product intros, educational resources, and exciting bonus activities to enhance the trading experience.',
@@ -276,35 +338,6 @@ const projects: Project[] = [
     ],
     image: '/assets/projects/chain-star.png',
     source_code_link: 'https://chainstar.cloud/en-US',
-  },
-  {
-    name: 'Kingcard - Wallet PWA',
-    description:
-      ' A PWA for managing crypto assets, enabling users to securely store, send, and receive digital currencies, and access their wallets with an intuitive and user-friendly interface.',
-    tags: [
-      {
-        name: 'nextjs',
-        color: 'blue-gradient',
-      },
-      {
-        name: 'zustand',
-        color: 'green-pink-gradient',
-      },
-      {
-        name: 'typescript',
-        color: 'blue-gradient',
-      },
-      {
-        name: 'i18n',
-        color: 'green-pink-gradient',
-      },
-      {
-        name: 'react-hook-form',
-        color: 'blue-gradient',
-      },
-    ],
-    image: '/assets/projects/kingcard.png',
-    source_code_link: 'https://kingcard.vip/en-US/download',
   },
   {
     name: 'Xglobal',
