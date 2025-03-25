@@ -170,33 +170,6 @@ const experiences: Experience[] = [
   },
 ];
 
-// const testimonials: Testimonial[] = [
-//   {
-//     testimonial:
-//       'I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.',
-//     name: 'Sara Lee',
-//     designation: 'CFO',
-//     company: 'Acme Co',
-//     image: 'https://randomuser.me/api/portraits/women/4.jpg',
-//   },
-//   {
-//     testimonial:
-//       "I've never met a web developer who truly cares about their clients' success like Rick does.",
-//     name: 'Chris Brown',
-//     designation: 'COO',
-//     company: 'DEF Corp',
-//     image: 'https://randomuser.me/api/portraits/men/5.jpg',
-//   },
-//   {
-//     testimonial:
-//       "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-//     name: 'Lisa Wang',
-//     designation: 'CTO',
-//     company: '456 Enterprises',
-//     image: 'https://randomuser.me/api/portraits/women/6.jpg',
-//   },
-// ];
-
 const projects: Project[] = [
   {
     name: 'Bon Voyage',
@@ -222,39 +195,6 @@ const projects: Project[] = [
     ],
     image: '/assets/projects/bon-voyage.webp',
     source_code_link: 'https://bonvoyage-f5e7d.web.app/',
-  },
-  {
-    name: 'WanderWords',
-    description:
-      'A dynamic blog platform where creators can share their unique ideas, experiences. Whether it’s personal reflections or technical discussions, this space empowers you to inspire.',
-    tags: [
-      {
-        name: 'next',
-        color: 'blue-gradient',
-      },
-      {
-        name: 'typescript',
-        color: 'green-pink-gradient',
-      },
-      {
-        name: 'tailwind',
-        color: 'blue-gradient',
-      },
-      {
-        name: 'node.js',
-        color: 'green-pink-gradient',
-      },
-      {
-        name: 'express',
-        color: 'blue-gradient',
-      },
-      {
-        name: 'mongoDB',
-        color: 'green-pink-gradient',
-      },
-    ],
-    image: '/assets/projects/wanderwords.webp',
-    source_code_link: 'https://github.com/weiowo/WanderWords',
   },
   {
     name: 'Kingcard - Crypto Wallet',
@@ -284,6 +224,77 @@ const projects: Project[] = [
     ],
     image: '/assets/projects/kingcard.png',
     source_code_link: 'https://kingcard.vip/en-US/download',
+  },
+
+  {
+    name: 'NestUP',
+    description:
+      'A modern housing platform where users can list, discover, and connect with property managers for a seamless renting experience.',
+    tags: [
+      {
+        name: 'next',
+        color: 'blue-gradient',
+      },
+      {
+        name: 'typescript',
+        color: 'green-pink-gradient',
+      },
+      {
+        name: 'tailwind',
+        color: 'blue-gradient',
+      },
+      {
+        name: 'node.js',
+        color: 'green-pink-gradient',
+      },
+      {
+        name: 'express',
+        color: 'blue-gradient',
+      },
+      {
+        name: 'postgreSQL',
+        color: 'green-pink-gradient',
+      },
+      {
+        name: 'AWS',
+        color: 'blue-gradient',
+      },
+      {
+        name: 'PRISMA',
+        color: 'green-pink-gradient',
+      },
+    ],
+    image: '/assets/projects/nestup.webp',
+    source_code_link: 'https://github.com/weiowo/NestUp',
+  },
+  {
+    name: 'Xglobal',
+    description:
+      'A modern website showcasing innovative iGaming solutions, featuring product overviews, gaming demos and resource downloads.',
+    tags: [
+      {
+        name: 'nextjs',
+        color: 'blue-gradient',
+      },
+      {
+        name: 'GSAP',
+        color: 'green-pink-gradient',
+      },
+      {
+        name: 'typescript',
+        color: 'blue-gradient',
+      },
+      {
+        name: 'i18n',
+        color: 'green-pink-gradient',
+      },
+      {
+        name: 'react-hook-form',
+        color: 'blue-gradient',
+      },
+    ],
+    image: '/assets/projects/xglobal.png',
+    source_code_link: 'https://xg.io/en-US',
   },
   {
     name: 'Radex Markets Website',
@@ -340,33 +351,37 @@ const projects: Project[] = [
     source_code_link: 'https://chainstar.cloud/en-US',
   },
   {
-    name: 'Xglobal',
+    name: 'WanderWords',
     description:
-      'A modern website showcasing innovative iGaming solutions, featuring product overviews, gaming demos and resource downloads.',
+      'A dynamic blog platform where creators can share their unique ideas, experiences. Whether it’s personal reflections or technical discussions, this space empowers you to inspire.',
     tags: [
       {
-        name: 'nextjs',
+        name: 'next',
         color: 'blue-gradient',
-      },
-      {
-        name: 'GSAP',
-        color: 'green-pink-gradient',
       },
       {
         name: 'typescript',
-        color: 'blue-gradient',
-      },
-      {
-        name: 'i18n',
         color: 'green-pink-gradient',
       },
       {
-        name: 'react-hook-form',
+        name: 'tailwind',
         color: 'blue-gradient',
       },
+      {
+        name: 'node.js',
+        color: 'green-pink-gradient',
+      },
+      {
+        name: 'express',
+        color: 'blue-gradient',
+      },
+      {
+        name: 'mongoDB',
+        color: 'green-pink-gradient',
+      },
     ],
-    image: '/assets/projects/xglobal.png',
-    source_code_link: 'https://xg.io/en-US',
+    image: '/assets/projects/wanderwords.webp',
+    source_code_link: 'https://github.com/weiowo/WanderWords',
   },
   {
     name: 'Stylish',
