@@ -46,6 +46,14 @@ const Hero: React.FC = () => {
                 height={25}
               />
             </Link>
+            <Link className="z-10" href="https://medium.com/@wutamy77">
+              <Image
+                src="/assets/medium.webp"
+                alt="medium-icon"
+                width={30}
+                height={30}
+              />
+            </Link>
           </div>
         </div>
       </div>
